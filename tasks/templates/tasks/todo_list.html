@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Task Manager</title>
+</head>
+<body>
+    <h1>My Todo Lists</h1>
+    <ul>
+        {% for item in lists %}
+            <li>
+                <strong>{{ item.title }}</strong> - (By: {{ item.user.username }})
+                <p>{{ item.description }}</p>
+            </li>
+        {% empty %}
+            <li>No lists found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
