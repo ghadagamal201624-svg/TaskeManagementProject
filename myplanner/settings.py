@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'rest_framework', 
     'django_filters',   
     'tasks',
+    'todo_lists',
+    'weekly_plans',
+    'monthly_plans',
 ]
 
 MIDDLEWARE = [
